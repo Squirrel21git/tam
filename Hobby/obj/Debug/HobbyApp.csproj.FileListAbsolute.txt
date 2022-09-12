@@ -1,0 +1,8 @@
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\obj\Debug\HobbyApp.csproj.AssemblyReference.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\obj\Debug\HobbyApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\obj\Debug\HobbyApp.csproj.CoreCompileInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\bin\Debug\HobbyApp.exe.config
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\bin\Debug\HobbyApp.exe
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\bin\Debug\HobbyApp.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\obj\Debug\HobbyApp.exe
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\Hobby\obj\Debug\HobbyApp.pdb
