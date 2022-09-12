@@ -1,0 +1,16 @@
+C:\Users\wozniakd\Desktop\ToDoList\bin\Debug\ToDoList.exe.config
+C:\Users\wozniakd\Desktop\ToDoList\bin\Debug\ToDoList.exe
+C:\Users\wozniakd\Desktop\ToDoList\bin\Debug\ToDoList.pdb
+C:\Users\wozniakd\Desktop\ToDoList\obj\Debug\ToDoList.csproj.AssemblyReference.cache
+C:\Users\wozniakd\Desktop\ToDoList\obj\Debug\ToDoList.csproj.SuggestedBindingRedirects.cache
+C:\Users\wozniakd\Desktop\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\wozniakd\Desktop\ToDoList\obj\Debug\ToDoList.exe
+C:\Users\wozniakd\Desktop\ToDoList\obj\Debug\ToDoList.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\obj\Debug\ToDoList.csproj.AssemblyReference.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\obj\Debug\ToDoList.csproj.SuggestedBindingRedirects.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\obj\Debug\ToDoList.exe
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\obj\Debug\ToDoList.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\bin\Debug\ToDoList.exe.config
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\bin\Debug\ToDoList.exe
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoList\bin\Debug\ToDoList.pdb

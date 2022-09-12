@@ -1,0 +1,8 @@
+C:\dwozniak\bank\bin\Debug\bank.exe.config
+C:\dwozniak\bank\bin\Debug\bank.exe
+C:\dwozniak\bank\bin\Debug\bank.pdb
+C:\dwozniak\bank\obj\Debug\bank.csproj.AssemblyReference.cache
+C:\dwozniak\bank\obj\Debug\bank.csproj.SuggestedBindingRedirects.cache
+C:\dwozniak\bank\obj\Debug\bank.csproj.CoreCompileInputs.cache
+C:\dwozniak\bank\obj\Debug\bank.exe
+C:\dwozniak\bank\obj\Debug\bank.pdb
