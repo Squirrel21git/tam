@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Xml.Serialization;
 
 namespace HobbyApp
 {
@@ -23,43 +25,104 @@ namespace HobbyApp
             printer = new Printer();
         }
 
-        public void ChooseEvent()
+        private int ChooseHobby()
         {
             do
             {
                 Console.Clear();
-                printer.PrintEvents(Events);
+                printer.PrintHobbys(Hobbys);
 
-                Console.WriteLine("\nWybierz event: ");
-                string choice = Console.ReadLine();
+                Console.WriteLine("\nWybierz hobby (0 - zakończ): ");
+                string tmp = Console.ReadKey().KeyChar.ToString();
 
-                if (Int32.TryParse(choice, out int id))
+                if (Int32.TryParse(tmp, out int id))
                 {
-                    EditEvent(id);
-                    break;
+                    if (id > -1 && id < Hobbys.Count() + 1)
+                        return id;
                 }
 
                 Console.WriteLine("Podano złą liczbę");
                 Console.ReadKey();
+
             } while (true);
         }
 
-        public void EditEvent(int id)
+        private int ChooseUser()
         {
-            throw new MissingMethodException();
+            do
+            {
+                Console.Clear();
+                printer.PrintUsers(Users);
+
+                Console.WriteLine("\nWybierz użytkownika (0 - zakończ): ");
+                string tmp = Console.ReadKey().KeyChar.ToString();
+
+                if (Int32.TryParse(tmp, out int id))
+                {
+                    if (id > -1 && id < Users.Count() + 1)
+                        return id;
+                }
+
+                Console.WriteLine("Podano złą liczbę");
+                Console.ReadKey();
+
+            } while (true);
         }
 
-        public void CreateEvent()
+        private int ChooseEvent()
+        {
+            do
+            {
+                Console.Clear();
+                printer.PrintShortEvents(Events);
+
+                Console.WriteLine("\nWybierz event (0 - zakończ): ");
+                string tmp = Console.ReadKey().KeyChar.ToString();
+
+                if (Int32.TryParse(tmp, out int id))
+                {
+                    if (id > -1 && id < Events.Count() + 1)
+                        return id;
+                }
+
+                Console.WriteLine("Podano złą liczbę");
+                Console.ReadKey();
+
+            } while (true);
+        }
+
+        private void CreateEvent()
         {
             Console.Clear();
             Hobby _hobby;
             List<User> _users = new List<User>();
-            DateTime _date = new DateTime();
+            DateTime _date;
 
-            //Events.Add(new Event(_hobby, _users, _date));
+
+            int h = ChooseHobby();
+            if (h != 0)
+                _hobby = Hobbys[h - 1];
+            else
+                return;
+
+            int user = -1;
+            do
+            {
+                user = ChooseUser();
+                if (user != 0)
+                    _users.Add(Users[user - 1]);
+
+            } while (user != 0);
+
+
+            _users = _users.GroupBy(a => a.Id).Select(a => a.First()).ToList();
+
+            _date = GetDateFromUser();
+
+            Events.Add(new Event(_hobby, _users, _date));
         }
 
-        public void CreateUser()
+        private void CreateUser()
         {
             Console.Clear();
 
@@ -71,7 +134,7 @@ namespace HobbyApp
             Users.Add(new User(GenerateUserId(), firstName, lastName));
         }
 
-        public void CreateHobby()
+        private void CreateHobby()
         {
             Console.Clear();
 
@@ -81,16 +144,96 @@ namespace HobbyApp
             Hobbys.Add(new Hobby(GenerateHobbyId(), name));
         }
 
-        public DateTime GetDateFromUser()
+        private void AddUserToEvent()
         {
-            Console.Write("Podaj dzień: ");
-            int day = int.Parse(Console.ReadLine());
-            Console.Write("Podaj miesiąc: ");
-            int month = int.Parse(Console.ReadLine());
-            Console.Write("Podaj rok: ");
-            int year = int.Parse(Console.ReadLine());
+            List<User> _users = new List<User>();
 
-            return new DateTime(year, month, day);
+            int e = ChooseEvent();
+            if (e == 0)
+                return;
+
+            int user = -1;
+            do
+            {
+                user = ChooseUser();
+                if (user != 0)
+                    _users.Add(Users[user - 1]);
+
+            } while (user != 0);
+
+            Events[e - 1].Users.AddRange(_users);
+            Events[e - 1].Users = Events[e - 1].Users.GroupBy(a => a.Id).Select(a => a.First()).ToList();
+        }
+
+        private DateTime GetDateFromUser()
+        {
+            // DZIEŃ
+            int day = -1;
+            do
+            {
+                Console.Clear();
+                Console.Write("Podaj dzień: ");
+                string tmp = Console.ReadLine();
+                if (Int32.TryParse(tmp, out int output))
+                {
+                    if (output > 0 && output < 32)
+                    {
+                        day = output;
+                        break;
+                    }
+                }
+
+                Console.WriteLine("Podano zły dzień");
+                Console.ReadKey();
+            } while (true);
+            
+            // MIESIĄC
+            int month = -1;
+            do
+            {
+                Console.Clear();
+                Console.Write("Podaj miesiąc: ");
+                string tmp = Console.ReadLine();
+
+                if (Int32.TryParse(tmp, out int output))
+                {
+                    if (output > 0 && output < 13)
+                    {
+                        month = output;
+                        break;
+                    }
+                }
+
+                Console.WriteLine("Podano zły miesiąc");
+                Console.ReadKey();
+            } while (true);
+
+            // ROK
+            int year = -1;
+            do
+            {
+                Console.Clear();
+                Console.Write("Podaj rok: ");
+                string tmp = Console.ReadLine();
+                if (Int32.TryParse(tmp, out int output))
+                {
+                    if (output > 1970 && output < 2100)
+                    {
+                        year = output;
+                        break;
+                    }
+                }
+
+                Console.WriteLine("Podano zły rok");
+                Console.ReadKey();
+            } while (true);
+
+            DateTime date = new DateTime(year, month, day);
+
+            Console.WriteLine("{0}",date.ToShortDateString());
+            Console.ReadKey();
+
+            return date;
         }
 
         private int GenerateUserId()
@@ -117,7 +260,7 @@ namespace HobbyApp
                     if (Int32.TryParse(tmp, out int tmpNum))
                         action = tmpNum;
 
-                } while (action < 0 || action > 4);
+                } while (action < 0 || action > 7);
 
                 switch (action)
                 {
@@ -131,11 +274,26 @@ namespace HobbyApp
                         CreateEvent();
                         break;
                     case 4:
-                        ChooseEvent();
+                        AddUserToEvent();
+                        break;
+                    case 5:
+                        Console.Clear();
+                        printer.PrintHobbys(Hobbys);
+                        Console.ReadKey();
+                        break;
+                    case 6:
+                        Console.Clear();
+                        printer.PrintUsers(Users);
+                        Console.ReadKey();
+                        break;
+                    case 7:
+                        Console.Clear();
+                        printer.PrintEvents(Events);
+                        Console.ReadKey();
                         break;
                 }
 
             } while (action != 0);
-        }    
+        }
     }
 }
