@@ -24,5 +24,10 @@ namespace wpf_podstawy_09_19
         {
             InitializeComponent();
         }
+
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    textBlock.Text = textBox.Text;
+        //}
     }
 }

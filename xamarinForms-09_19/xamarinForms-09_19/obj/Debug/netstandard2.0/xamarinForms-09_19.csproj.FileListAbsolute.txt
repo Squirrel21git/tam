@@ -1,0 +1,15 @@
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\bin\Debug\netstandard2.0\xamarinForms-09_19.deps.json
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\bin\Debug\netstandard2.0\xamarinForms-09_19.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\bin\Debug\netstandard2.0\xamarinForms-09_19.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.csproj.AssemblyReference.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.AssemblyInfoInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.AssemblyInfo.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.csproj.CoreCompileInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\refint\xamarinForms-09_19.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\xamarinForms-09_19.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\xamarinForms-09_19\xamarinForms-09_19\obj\Debug\netstandard2.0\ref\xamarinForms-09_19.dll

@@ -9,9 +9,11 @@
 
 
     <StackPanel>
-        <TextBox/>
+        <TextBox x:Name="textBox" Text=""/>
         <Button Content="Wpisz cos i nacisnij mnie"/>
-        <TextBlock/>
+        <TextBlock x:Name="textBlock" Text="{Binding ElementName=textBox, Path=Text, Mode=OneWay}"/>
+        <Slider x:Name="slider" Minimum="0" Maximum="30" Value="{Binding ElementName=sliderValue, Path=Text}" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <TextBox x:Name="sliderValue"/>
     </StackPanel>
 
 </Window>
