@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoListMobile.Pages.EventItemPage">
+
+    <StackLayout>
+        <Entry
+            x:Name="subjectE"
+            Placeholder="temat"
+            Keyboard="Text"
+            ReturnType="Next"
+            />
+        <Editor
+            x:Name="infoE"
+            Placeholder="Opis"
+            Keyboard="Text"
+            AutoSize="TextChanges"
+            />
+        <Button
+            x:Name="buttonE"
+            Text="Zatwierdź"
+            Clicked="buttonE_Clicked"
+            />
+    </StackLayout>
+    
+</ContentPage>

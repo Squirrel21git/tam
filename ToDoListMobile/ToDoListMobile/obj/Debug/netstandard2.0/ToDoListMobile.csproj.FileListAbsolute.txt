@@ -1,0 +1,16 @@
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\bin\Debug\netstandard2.0\ToDoListMobile.deps.json
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\bin\Debug\netstandard2.0\ToDoListMobile.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\bin\Debug\netstandard2.0\ToDoListMobile.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.csproj.AssemblyReference.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.AssemblyInfoInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.AssemblyInfo.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.csproj.CoreCompileInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\refint\ToDoListMobile.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ToDoListMobile.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\ref\ToDoListMobile.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\ToDoListMobile\ToDoListMobile\obj\Debug\netstandard2.0\Pages\EventItemPage.xaml.g.cs
