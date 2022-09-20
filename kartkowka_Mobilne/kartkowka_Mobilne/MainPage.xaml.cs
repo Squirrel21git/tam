@@ -14,5 +14,10 @@ namespace kartkowka_Mobilne
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            ((Button)sender).Text = (int.Parse(((Button)sender).Text) + 1).ToString();
+        }
     }
 }

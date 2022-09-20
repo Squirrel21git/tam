@@ -1,0 +1,15 @@
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\bin\Debug\netstandard2.0\kartkowka_Mobilne.deps.json
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\bin\Debug\netstandard2.0\kartkowka_Mobilne.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\bin\Debug\netstandard2.0\kartkowka_Mobilne.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.csproj.AssemblyReference.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.AssemblyInfoInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.AssemblyInfo.cs
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.csproj.CoreCompileInputs.cache
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\refint\kartkowka_Mobilne.dll
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\kartkowka_Mobilne.pdb
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\kartkowka_Mobilne\kartkowka_Mobilne\obj\Debug\netstandard2.0\ref\kartkowka_Mobilne.dll
