@@ -10,7 +10,8 @@
                      Clicked="ToolbarItem_ClickedAdd"/>
         <ToolbarItem Text="Ukończone zadania"
                      Order="Secondary"
-                     Priority="0"/>
+                     Priority="0"
+                     Clicked="ToolbarItem_ClickedFinished"/>
         <ToolbarItem Text="Informacje"
                      Order="Secondary"
                      Priority="1"/>
@@ -20,12 +21,16 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Text="Edit" CommandParameter="{Binding .}" Clicked="MenuItem_Edit"/>
+                        <MenuItem Text="Ukończ" CommandParameter="{Binding .}" Clicked="MenuItem_Finish"/> 
+                        <MenuItem Text="Usuń" CommandParameter="{Binding .}" Clicked="MenuItem_Delete"/> 
+                    </ViewCell.ContextActions>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding Subject}"/>
+                        <Label Text="{Binding Subject}" FontSize="Large"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
 </ContentPage>

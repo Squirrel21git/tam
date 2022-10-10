@@ -28,5 +28,29 @@ namespace _4b2_ToDoList
         {
             await Navigation.PushAsync(new EventItemPage());
         }
+        private async void ToolbarItem_ClickedFinished(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListViewDone());
+        }
+
+        private void MenuItem_Delete(object sender, EventArgs e)
+        {
+            var item = (sender as MenuItem).CommandParameter as EventItem;
+            EventItem.List.Remove(item);
+        }
+
+        private async void MenuItem_Edit(object sender, EventArgs e)
+        {
+            var item = (sender as MenuItem).CommandParameter as EventItem;
+            await Navigation.PushAsync(new EventItemPage(item.Id));
+        }
+
+        private void MenuItem_Finish(object sender, EventArgs e)
+        {
+            var item = (sender as MenuItem).CommandParameter as EventItem;
+            EventItem.List.Remove(item);
+            EventItem.ListDone.Add(item);
+        }
+
     }
 }
