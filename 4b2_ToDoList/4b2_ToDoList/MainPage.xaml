@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4b2_ToDoList.MainPage"
+             Title="Lista zadań">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Dodaj"
+                     Order="Primary"
+                     Clicked="ToolbarItem_ClickedAdd"/>
+        <ToolbarItem Text="Ukończone zadania"
+                     Order="Secondary"
+                     Priority="0"/>
+        <ToolbarItem Text="Informacje"
+                     Order="Secondary"
+                     Priority="1"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="eventsItemListView" ItemSelected="eventsItemListView_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Subject}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
