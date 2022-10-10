@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hgoeC5n703GAu2utAZfWNQunrHY70/yLUoMTjpI4dFAvHqsnzZXibIigIyxQFERVLNin51DGq50c7a9/Eid8nw==",
+  "dgSpecHash": "Scjib/VFLmlW6jSUcTgMChZZzJE0jqrOCIS7S8Yb5XVaWamLTyOb22Sn5Z+Ee/O925I3WvjnkPbTU2QdfPDrGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList.Android\\4b2_ToDoList.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wozniakd\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\wozniakd\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",

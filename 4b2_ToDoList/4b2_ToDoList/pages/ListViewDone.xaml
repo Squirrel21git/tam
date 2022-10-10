@@ -21,9 +21,9 @@
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.ContextActions>
-                        <MenuItem Text="Edit" CommandParameter="{Binding .}" />
-                        <MenuItem Text="Ukończ" CommandParameter="{Binding .}" />
-                        <MenuItem Text="Usuń" CommandParameter="{Binding .}" />
+                        <MenuItem Text="Edit" CommandParameter="{Binding .}" Clicked="MenuItem_Edit"/>
+                        <MenuItem Text="Revert" CommandParameter="{Binding .}" Clicked="MenuItem_Unfinish"/>
+                        <MenuItem Text="🗑" CommandParameter="{Binding .}" Clicked="MenuItem_Edit"/>
                     </ViewCell.ContextActions>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="{Binding Subject}" FontSize="Large"/>

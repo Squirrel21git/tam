@@ -1264,3 +1264,4 @@ C:\Users\wozniakd\Desktop\Prace\4b2_programy_\4b2_ToDoList\4b2_ToDoList.Android\
 C:\Users\wozniakd\Desktop\Prace\4b2_programy_\4b2_ToDoList\4b2_ToDoList.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\wozniakd\Desktop\Prace\4b2_programy_\4b2_ToDoList\4b2_ToDoList.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\wozniakd\Desktop\Prace\4b2_programy_\4b2_ToDoList\4b2_ToDoList.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\wozniakd\Desktop\Prace\4b2_programy_\4b2_ToDoList\4b2_ToDoList.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll

@@ -5,9 +5,10 @@
              Title="Lista zadań">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Dodaj"
+        <ToolbarItem Text="⁤+"
                      Order="Primary"
                      Clicked="ToolbarItem_ClickedAdd"/>
+        
         <ToolbarItem Text="Ukończone zadania"
                      Order="Secondary"
                      Priority="0"
@@ -15,6 +16,10 @@
         <ToolbarItem Text="Informacje"
                      Order="Secondary"
                      Priority="1"/>
+        <ToolbarItem Text="Zapisz"
+                     Order="Secondary"
+                     Priority="2"
+                     Clicked="ToolbarItem_SaveToJson"/>
     </ContentPage.ToolbarItems>
 
     <ListView x:Name="eventsItemListView" ItemSelected="eventsItemListView_ItemSelected">
@@ -23,8 +28,8 @@
                 <ViewCell>
                     <ViewCell.ContextActions>
                         <MenuItem Text="Edit" CommandParameter="{Binding .}" Clicked="MenuItem_Edit"/>
-                        <MenuItem Text="Ukończ" CommandParameter="{Binding .}" Clicked="MenuItem_Finish"/> 
-                        <MenuItem Text="Usuń" CommandParameter="{Binding .}" Clicked="MenuItem_Delete"/> 
+                        <MenuItem Text="✔" CommandParameter="{Binding .}" Clicked="MenuItem_Finish"/>
+                        <MenuItem Text="🗑" CommandParameter="{Binding .}" Clicked="MenuItem_Delete"/> 
                     </ViewCell.ContextActions>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="{Binding Subject}" FontSize="Large"/>

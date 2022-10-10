@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj": {}
+    "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj": {
+    "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj",
         "projectName": "4b2_ToDoList.iOS",
-        "projectPath": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj",
-        "packagesPath": "C:\\Users\\sinickis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList.iOS\\obj\\",
+        "projectPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList.iOS\\4b2_ToDoList.iOS.csproj",
+        "packagesPath": "C:\\Users\\wozniakd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sinickis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wozniakd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj": {
-                "projectPath": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj"
+              "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj": {
+                "projectPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj": {
+    "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj",
+        "projectUniqueName": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj",
         "projectName": "4b2_ToDoList",
-        "projectPath": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj",
-        "packagesPath": "C:\\Users\\sinickis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sinickis\\source\\repos\\4b2_ToDoList\\4b2_ToDoList\\obj\\",
+        "projectPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList\\4b2_ToDoList.csproj",
+        "packagesPath": "C:\\Users\\wozniakd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\4b2_ToDoList\\4b2_ToDoList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sinickis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wozniakd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -111,6 +111,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

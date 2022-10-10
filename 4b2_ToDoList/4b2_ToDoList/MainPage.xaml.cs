@@ -7,14 +7,23 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using _4b2_ToDoList.pages;
+using Newtonsoft.Json;
+using System.IO;
+using System.Collections.ObjectModel;
 
 namespace _4b2_ToDoList
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(List<EventItem> value)
         {
             InitializeComponent();
+            EventItem.List = new ObservableCollection<EventItem>(value);
+            eventsItemListView.ItemsSource = EventItem.List;
+        }
+        public MainPage()
+        {
+            InitializeComponent();            
             eventsItemListView.ItemsSource = EventItem.List;
         }
 
@@ -52,5 +61,11 @@ namespace _4b2_ToDoList
             EventItem.ListDone.Add(item);
         }
 
+        private void ToolbarItem_SaveToJson(object sender, EventArgs e)
+        {
+            var jsonSaver = new JsonSO();
+
+            jsonSaver.SaveToJson(EventItem.List, "List");
+        }
     }
 }

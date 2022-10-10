@@ -5,7 +5,7 @@ using System.Text;
 
 namespace _4b2_ToDoList.classes
 {
-    internal class EventItem
+    public class EventItem
     {
         public static ObservableCollection<EventItem> List = new ObservableCollection<EventItem>();
         public static ObservableCollection<EventItem> ListDone = new ObservableCollection<EventItem>();

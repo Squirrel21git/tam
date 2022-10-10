@@ -25,5 +25,23 @@ namespace _4b2_ToDoList.pages
             DisplayAlert(item.Subject, item.Info, "Zamknij");
         }
 
+        private void MenuItem_Unfinish(object sender, EventArgs e)
+        {
+            var item = (sender as MenuItem).CommandParameter as EventItem;
+            EventItem.ListDone.Remove(item);
+            EventItem.List.Add(item);
+        }
+
+        private async void MenuItem_Edit(object sender, EventArgs e)
+        {
+            var item = (sender as MenuItem).CommandParameter as EventItem;
+            await Navigation.PushAsync(new EventItemPage(item.Id));
+        }
+
+        private void MenuItem_Delete(object sender, EventArgs e)
+        {
+            var item = (sender as MenuItem).CommandParameter as EventItem;
+            EventItem.ListDone.Remove(item);
+        }
     }
 }

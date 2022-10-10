@@ -23,7 +23,7 @@ namespace _4b2_ToDoList.pages
         {
             InitializeComponent();
 
-            EventItem item = EventItem.List.Single(x => x.Id == id);
+            var item = EventItem.List.Any(x => x.Id == id) ? EventItem.List.Single(x => x.Id == id) : EventItem.ListDone.Single(x => x.Id == id);
             pageAddEdit.Title = "Edytuj: " + item.Subject;
 
             subjectE.Text = item.Subject;
@@ -37,14 +37,29 @@ namespace _4b2_ToDoList.pages
             if (idE.Text == "")
             { 
                 id = EventItem.List.Any() ? EventItem.List.Max(x => x.Id) + 1 : 1;
+                EventItem.List.Add(new EventItem(id, subjectE.Text, infoE.Text));
+
             }
             else
             {
-                EventItem.List.Remove(EventItem.List.Single(x => x.Id == int.Parse(idE.Text)));
                 id = int.Parse(idE.Text);
+                if (EventItem.List.Any(x => x.Id == id))
+                {
+                    EventItem.List.Remove(EventItem.List.Single(x => x.Id == int.Parse(idE.Text)));
+                    EventItem.List.Add(new EventItem(id, subjectE.Text, infoE.Text));
+
+                }
+                else
+                {
+                    EventItem.ListDone.Remove(EventItem.ListDone.Single(x => x.Id == int.Parse(idE.Text)));
+                    EventItem.ListDone.Add(new EventItem(id, subjectE.Text, infoE.Text));
+
+                }
             }
-                EventItem.List.Add(new EventItem(id, subjectE.Text,infoE.Text));
-                await Navigation.PopAsync();
+            var jsonSaver = new JsonSO();
+
+            jsonSaver.SaveToJson(EventItem.List, "List");
+            await Navigation.PopAsync();
         }
     }
 }
