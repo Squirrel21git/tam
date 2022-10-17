@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsoluteLayout.MainPage">
+
+    <!--<RelativeLayout>
+        <Frame 
+            BackgroundColor="Maroon"
+            x:Name="background"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.9}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.95}"
+            RelativeLayout.XConstraint="20"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Property=Height,
+            Factor=.025}"
+            CornerRadius="10"     
+            >
+            <RelativeLayout>
+                <Frame
+                    BackgroundColor="Gray"
+                    CornerRadius="50"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Property=Width,
+                    Factor=.25
+                    }"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Property=Width,
+                    Factor=.25
+                    }"
+                    RelativeLayout.XConstraint="{ConstraintExpression
+                    Property=Width,
+                    Factor=.35
+                    }"
+                    >
+                    
+                </Frame>
+                <Label 
+                    Text="Technological University of the  Philippines" 
+                    TextColor="White"
+                    
+                    />
+                <Frame
+                    BackgroundColor="Gray"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=.25
+                    }"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=.5
+                    }"
+                    RelativeLayout.XConstraint="{ConstraintExpression
+                    Property=Width,
+                    Factor=0.25
+                    }"
+                    RelativeLayout.YConstraint="{ConstraintExpression
+                    Property=Height,
+                    Factor=0.20}"
+                    >
+                    -->
+    <!--<Image 
+                        Source="https://bi.im-g.pl/im/7e/e6/13/z20868478IH,Janusz-Korwin-Mikke.jpg" 
+                        Aspect="AspectFit" 
+                    
+                        />-->
+    <!--
+
+                </Frame>
+            </RelativeLayout>
+        </Frame>
+    </RelativeLayout>-->
+
+    <AbsoluteLayout>
+        <Frame 
+            BackgroundColor="Maroon"
+            CornerRadius="10"
+            AbsoluteLayout.LayoutBounds=".5,.5,350,750"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            >
+            <AbsoluteLayout>
+                <Frame
+                    BackgroundColor="LightGray"
+                    AbsoluteLayout.LayoutBounds=".5,0,60,60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    CornerRadius="100"
+                    >
+                    <Image Source="https://tinyurl.com/4ev5k6wv"
+                           Aspect="Fill"
+                           />
+                </Frame>
+                <Label
+                    Text="Technological University of the  Philippines" 
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds=".5,.1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    />
+                <Label
+                    Text="Ermita, Manila" 
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds=".5,.125"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    />
+                <Frame
+                    BackgroundColor="LightGray"
+                    AbsoluteLayout.LayoutBounds=".5,.275,150,200"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Padding="0"
+                    >
+                    <Image Source="https://yt3.ggpht.com/a/AATXAJyoEvHUSFPQCMlj8vu_ySH9OkFAbl7AGqyjik_0=s900-c-k-c0xffffffff-no-rj-mo" Aspect="Fill"/>
+                </Frame>
+                <Label
+                    Text="ID No.:20-209-001" 
+                    TextColor="White"
+                    FontSize="18"
+                    AbsoluteLayout.LayoutBounds=".5,.5"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    />
+                <AbsoluteLayout
+                    AbsoluteLayout.LayoutBounds=".5,1,325,325"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    >
+                    <Label
+                        Text="Name"
+                        TextColor="White"
+                        FontSize="18"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        />
+                    <Label
+                        AbsoluteLayout.LayoutBounds=".5,.1,325,40"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        BackgroundColor="LightGray"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="Black"
+                        Text="MIKAELSON"
+                        />
+                    
+                    
+                    <Label
+                        Text="Course"
+                        TextColor="White"
+                        FontSize="18"
+                        AbsoluteLayout.LayoutBounds="0,.25"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        />
+                    <Label
+                        AbsoluteLayout.LayoutBounds=".5,.35,325,40"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        BackgroundColor="LightGray"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        FontSize="24"
+                        FontAttributes="None"
+                        TextColor="Black"
+                        Text="BSIE"
+                        />
+                    
+                    
+                    <Label
+                        Text="Major"
+                        TextColor="White"
+                        FontSize="18"
+                        AbsoluteLayout.LayoutBounds="0,.5"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        />
+                    <Label
+                        AbsoluteLayout.LayoutBounds=".5,.61,325,40"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        BackgroundColor="LightGray"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        FontSize="24"
+                        FontAttributes="None"
+                        TextColor="Black"
+                        Text="COMPRO"
+                        />
+
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds=".5,1,350,40"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        BackgroundColor="CadetBlue"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        FontSize="24"
+                        FontAttributes="None"
+                        TextColor="Black"
+                        Text="College of Industrial Education"
+                        />
+                </AbsoluteLayout>
+            </AbsoluteLayout>
+        </Frame>
+    </AbsoluteLayout>
+
+</ContentPage>
