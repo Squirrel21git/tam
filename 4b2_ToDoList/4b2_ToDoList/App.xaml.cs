@@ -14,12 +14,11 @@ namespace _4b2_ToDoList
         public App()
         {
             InitializeComponent();
-            List<EventItem> temp = new List<EventItem>(EventItem.List as ObservableCollection<EventItem>);
-            var ListEventItem = JsonConvert.DeserializeObject<List<EventItem>>(File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDoList.txt")));
+            
 
             //MainPage = new MainPage();
 
-            MainPage = new NavigationPage(new MainPage(ListEventItem));
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

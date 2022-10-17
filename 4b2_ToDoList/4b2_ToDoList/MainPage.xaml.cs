@@ -15,15 +15,21 @@ namespace _4b2_ToDoList
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage(List<EventItem> value)
-        {
-            InitializeComponent();
-            EventItem.List = new ObservableCollection<EventItem>(value);
-            eventsItemListView.ItemsSource = EventItem.List;
-        }
+        JsonSO jsonSaver = new JsonSO();
+
         public MainPage()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            List<EventItem> temp = new List<EventItem>(EventItem.List as ObservableCollection<EventItem>);
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDoList.json");
+
+            if (File.Exists(path))
+            {
+                var ListEventItem = JsonConvert.DeserializeObject<List<EventItem>>(File.ReadAllText(path));
+
+                EventItem.List = new ObservableCollection<EventItem>(ListEventItem);
+            }
+
             eventsItemListView.ItemsSource = EventItem.List;
         }
 
@@ -46,6 +52,7 @@ namespace _4b2_ToDoList
         {
             var item = (sender as MenuItem).CommandParameter as EventItem;
             EventItem.List.Remove(item);
+            jsonSaver.SaveToJson(EventItem.List, "List");
         }
 
         private async void MenuItem_Edit(object sender, EventArgs e)
@@ -58,7 +65,18 @@ namespace _4b2_ToDoList
         {
             var item = (sender as MenuItem).CommandParameter as EventItem;
             EventItem.List.Remove(item);
+
+            List<EventItem> temp = new List<EventItem>(EventItem.List as ObservableCollection<EventItem>);
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDoListDone.json");
+            if (File.Exists(path))
+            {
+                var ListEventItem = JsonConvert.DeserializeObject<List<EventItem>>(File.ReadAllText(path));
+                EventItem.ListDone = new ObservableCollection<EventItem>(ListEventItem);
+            }
+
             EventItem.ListDone.Add(item);
+            jsonSaver.SaveToJson(EventItem.List, "List");
+            jsonSaver.SaveToJson(EventItem.ListDone, "ListDone");
         }
 
         private void ToolbarItem_SaveToJson(object sender, EventArgs e)

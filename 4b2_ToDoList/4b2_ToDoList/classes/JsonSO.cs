@@ -12,7 +12,7 @@ namespace _4b2_ToDoList.classes
         {
             var json = JsonConvert.SerializeObject(item);
 
-            File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDoList.txt"), json);
+            File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDo" + filename + ".json"), json);
         }
     }
 }

@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_4b2_ToDoList.pages.ListViewDone"
-             Title="Lista ukończonych zadań">
+             Title="Lista ukończonych zadań"
+             BackgroundColor="LightSlateGray"
+             >
     
     <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Dodaj"
@@ -23,11 +25,25 @@
                     <ViewCell.ContextActions>
                         <MenuItem Text="Edit" CommandParameter="{Binding .}" Clicked="MenuItem_Edit"/>
                         <MenuItem Text="Revert" CommandParameter="{Binding .}" Clicked="MenuItem_Unfinish"/>
-                        <MenuItem Text="🗑" CommandParameter="{Binding .}" Clicked="MenuItem_Edit"/>
+                        <MenuItem Text="🗑" CommandParameter="{Binding .}" Clicked="MenuItem_Delete"/>
                     </ViewCell.ContextActions>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding Subject}" FontSize="Large"/>
-                    </StackLayout>
+                    <Frame 
+                        BorderColor="Gray" 
+                        BackgroundColor="LightGray"
+                        CornerRadius="5" 
+                        HasShadow="True"
+                        Padding="5" 
+                        Margin="4" 
+                        >
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                Text="{Binding Subject}" 
+                                FontSize="Medium" 
+                                FontAttributes="Bold" 
+                                TextColor="Black"
+                                />
+                        </StackLayout>
+                    </Frame>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>

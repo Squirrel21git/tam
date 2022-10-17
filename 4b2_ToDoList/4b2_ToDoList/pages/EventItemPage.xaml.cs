@@ -33,11 +33,13 @@ namespace _4b2_ToDoList.pages
 
         async void button_Clicked(object sender, EventArgs e)
         {
+            var jsonSaver = new JsonSO();
             int id = 0;
             if (idE.Text == "")
             { 
                 id = EventItem.List.Any() ? EventItem.List.Max(x => x.Id) + 1 : 1;
                 EventItem.List.Add(new EventItem(id, subjectE.Text, infoE.Text));
+                jsonSaver.SaveToJson(EventItem.List, "List");
 
             }
             else
@@ -47,18 +49,19 @@ namespace _4b2_ToDoList.pages
                 {
                     EventItem.List.Remove(EventItem.List.Single(x => x.Id == int.Parse(idE.Text)));
                     EventItem.List.Add(new EventItem(id, subjectE.Text, infoE.Text));
-
+                    jsonSaver.SaveToJson(EventItem.List, "List");
                 }
                 else
                 {
                     EventItem.ListDone.Remove(EventItem.ListDone.Single(x => x.Id == int.Parse(idE.Text)));
                     EventItem.ListDone.Add(new EventItem(id, subjectE.Text, infoE.Text));
+                    jsonSaver.SaveToJson(EventItem.ListDone, "ListDone");
 
                 }
             }
-            var jsonSaver = new JsonSO();
+            
 
-            jsonSaver.SaveToJson(EventItem.List, "List");
+           
             await Navigation.PopAsync();
         }
     }
