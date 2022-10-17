@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pages.FlyoutMenuPage"
+             Title="FlyoutMenu"
+             xmlns:local="clr-namespace:Pages">
+    <StackLayout>
+        <ListView x:Name="listview" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:FlyoutItemPage}">
+                    <local:FlyoutItemPage Title="Home" IconSource="https://img.icons8.com/material-outlined/344/home-page.png" TargetPage="{x:Type local:HomePage}"/>
+                    <local:FlyoutItemPage Title="Courses" IconSource="https://img.icons8.com/ios/344/courses.png" TargetPage="{x:Type local:CoursesPage}"/>
+                    <local:FlyoutItemPage Title="About" IconSource="https://img.icons8.com/ios-glyphs/344/info--v1.png" TargetPage="{x:Type local:AboutPage}"/>
+                    <local:FlyoutItemPage Title="Logout" IconSource="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/344/external-log-out-ecommerce-user-interface-inkubators-detailed-outline-inkubators.png" TargetPage="{x:Type local:LogoutPage}"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnDefinitions="33,*">
+                            <Image Source="{Binding IconSource}" Grid.Column="0"/>
+                            <Label Text="{Binding Title}" Grid.Column="1"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
