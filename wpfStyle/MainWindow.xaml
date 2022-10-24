@@ -1,0 +1,85 @@
+﻿<Window x:Class="wpfStyle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfStyle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="481"
+        >
+    <Window.Resources>
+        <local:BoolVisibilityConverter x:Key="BVC"/>
+    </Window.Resources>
+    <StackPanel>
+        <ToggleButton Style="{StaticResource on-off}" x:Name="toggleOnOff" Margin="0,0,0,5"/>
+        <StackPanel Visibility="{Binding ElementName=toggleOnOff, Path=IsChecked, Converter={StaticResource BVC}}">
+            <GroupBox Margin="10">
+                <GroupBox.Header>
+                    Ile godzin dziennie poświęcasz na programowanie?
+
+                </GroupBox.Header>
+                <StackPanel>
+                    <RadioButton Style="{StaticResource radio}">wcale</RadioButton>
+                    <RadioButton>1-2h</RadioButton>
+                    <RadioButton>3-6h</RadioButton>
+                    <RadioButton>6-12h</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox 
+                Margin="10" 
+                Header="Ile godzin dziennie poświęcasz na granie w gry?"
+                >
+                <StackPanel>
+                    <RadioButton Style="{StaticResource radio}">wcale</RadioButton>
+                    <RadioButton>1-2h</RadioButton>
+                    <RadioButton>2-6h</RadioButton>
+                    <RadioButton x:Name="wiecej">
+                        <WrapPanel>
+                            <Label x:Name="wiecejLabel">Więcej:</Label>
+                            <Popup 
+                                IsOpen="{Binding ElementName=wiecej, Path=IsChecked}"
+                                PlacementTarget="{Binding ElementName=wiecejLabel}"
+                                Placement="Right"
+                                PopupAnimation="Scroll"
+                                AllowsTransparency="True"
+                                >
+                                <TextBox MinWidth="50"/>
+                            </Popup>
+                        </WrapPanel>
+                    </RadioButton>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <ToggleButton IsChecked="{Binding ElementName=ankieta, Path=IsOpen}" x:Name="toggleAnkieta">
+            <ToggleButton.Style>
+                <Style TargetType="{x:Type ToggleButton}">
+                    <Setter Property="Content" Value="Pokaż dodatkowe pytanie"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content" Value="Ukryj pytanie"/>
+                        </Trigger>
+                        <!--<MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True"/>
+                                <Condition Property="IsEnabled" Value="True"/>
+                            </MultiTrigger.Conditions>
+                        </MultiTrigger>-->
+                    </Style.Triggers>
+                </Style>
+            </ToggleButton.Style>
+        </ToggleButton>
+        <Popup x:Name="ankieta" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=toggleAnkieta}" >
+            <GroupBox 
+                Margin="10" 
+                Header="Ile godzin dziennie poświęcasz na ćwiczenia fizyczne?"
+                >
+                <StackPanel>
+                    <RadioButton Style="{StaticResource radio}">wcale</RadioButton>
+                    <RadioButton>1-2h</RadioButton>
+                    <RadioButton>2-4h</RadioButton>
+                    <RadioButton>4h+</RadioButton>
+                </StackPanel>
+            </GroupBox>
+        </Popup>
+    </StackPanel>
+</Window>
