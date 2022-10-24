@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinPosty.MainPage"
+            xmlns:local="clr-namespace:xamarinPosty"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            BarBackgroundColor="Black"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="White"
+            android:TabbedPage.BarSelectedItemColor="LightBlue"
+            >
+
+
+    <local:ShowPostsPage Title="Posty" IconImageSource="https://img.icons8.com/ios/50/000000/home--v1.png"/>
+    <local:ShowUsersPage Title="Użytkownicy" IconImageSource="https://img.icons8.com/ios-glyphs/30/000000/user--v1.png"/>
+    <local:CreatePostPage Title="Dodaj post" IconImageSource="https://img.icons8.com/ios/50/000000/message-squared.png"/>
+    <local:CreateUserPage Title="Stwórz użytkownika" IconImageSource="https://img.icons8.com/ios/50/000000/add-user-male.png"/>
+</TabbedPage>

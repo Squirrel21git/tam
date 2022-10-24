@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinPosty.CreateUserPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="CenterAndExpand" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Label Text="Płeć:" FontSize="Title"/>
+                <RadioButton x:Name="genderM" Content="M" IsChecked="True"/>
+                <RadioButton x:Name="genderK" Content="K"/>
+            </StackLayout>
+            <Entry x:Name="name" Placeholder="Imie" Keyboard="Text" MaxLength="50"/>
+            <Entry x:Name="surname" Placeholder="Nazwisko" Keyboard="Text" MaxLength="100"/>
+            <Entry x:Name="age" Placeholder="Wiek" MaxLength="3" Keyboard="Numeric"/>
+            <Button Text="Add" Clicked="CreateUserButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

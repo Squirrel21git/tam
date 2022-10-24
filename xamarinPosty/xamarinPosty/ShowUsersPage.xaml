@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinPosty.ShowUsersPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Picker FontSize="Title" 
+                    Title="Użytkownik" 
+                    x:Name="userPicker" 
+                    ItemDisplayBinding="{Binding NameAndLastname}" 
+                    SelectedIndexChanged="userPicker_SelectedIndexChanged"
+                    HorizontalTextAlignment="Center"
+                    Margin="25"/>
+            <StackLayout>
+                <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="name" Text="Imie: "/>
+                <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="surname" Text="Nazwisko: "/>
+                <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="age" Text="Wiek: "/>
+                <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="posts_count" Text="Ilość postów: "/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
