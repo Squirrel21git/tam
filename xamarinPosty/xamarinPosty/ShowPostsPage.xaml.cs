@@ -18,5 +18,12 @@ namespace xamarinPosty
             InitializeComponent();
             postsListView.ItemsSource = Post.List;
         }
+
+        private void postsListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as Post;
+
+            DisplayAlert(item.User.NameAndLastname, item.Description, "Zamknij");
+        }
     }
 }

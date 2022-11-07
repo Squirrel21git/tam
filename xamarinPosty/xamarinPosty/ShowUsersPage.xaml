@@ -15,6 +15,7 @@
                 <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="name" Text="Imie: "/>
                 <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="surname" Text="Nazwisko: "/>
                 <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="age" Text="Wiek: "/>
+                <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="gender" Text="Płeć: "/>
                 <Label HorizontalTextAlignment="Center" FontSize="Title" x:Name="posts_count" Text="Ilość postów: "/>
             </StackLayout>
         </StackLayout>

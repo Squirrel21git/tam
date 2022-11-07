@@ -3,21 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="xamarinPosty.ShowPostsPage">
     <ContentPage.Content>
-        <StackLayout Margin="20">
-            <ListView x:Name="postsListView">
+        <StackLayout Margin="10">
+            <ListView x:Name="postsListView" ItemSelected="postsListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" MinimumHeightRequest="100">
+                            <StackLayout  Orientation="Horizontal" MinimumHeightRequest="100" WidthRequest="256" Padding="10,0,10,0">
                                 <Label
+                                    FontSize="10"
                                     VerticalOptions="Start"
                                     HorizontalOptions="Start"
                                     Text="{Binding User.NameAndLastname}"
                                     />
                                 <Label
+                                    FontSize="18"
                                     VerticalOptions="End"
-                                    HorizontalOptions="End"
+                                    HorizontalOptions="EndAndExpand"
                                     Text="{Binding Description}"
+                                    WidthRequest="256"
+                                    HorizontalTextAlignment="End"
+                                    LineBreakMode="TailTruncation"
                                     />
                             </StackLayout>
                         </ViewCell>

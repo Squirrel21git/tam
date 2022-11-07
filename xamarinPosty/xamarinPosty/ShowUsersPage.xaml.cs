@@ -25,6 +25,7 @@ namespace xamarinPosty
             name.Text = "Imie: " + user.Name;
             surname.Text = "Nazwisko: " + user.Lastname;
             age.Text = "Wiek: " + user.Age.ToString();
+            gender.Text = "Płeć: " + user.Gender;
             posts_count.Text = "Liczba postów:" + Post.List.Count(x => x.User == user).ToString();
         }
     }
