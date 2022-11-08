@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kartkowkaXamarin2.MainPage"
+            xmlns:local="clr-namespace:kartkowkaXamarin2"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            >
+
+    <local:Images Title="Zdjęcia"/>
+    <local:AddAge Title="Dodaj wiek" />
+    <local:AgeList Title="Lista"/>
+</TabbedPage>

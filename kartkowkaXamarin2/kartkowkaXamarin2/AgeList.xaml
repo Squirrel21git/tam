@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kartkowkaXamarin2.AgeList">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <ListView x:Name="ageListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout  Orientation="Horizontal" MinimumHeightRequest="100" WidthRequest="256" Padding="10,0,10,0">
+                                <Label
+                                    FontSize="18"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="EndAndExpand"
+                                    Text="Wiek: "
+                                    />
+                                <Label
+                                    FontSize="18"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{Binding Age}"
+                                    HorizontalTextAlignment="Start"
+                                    />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

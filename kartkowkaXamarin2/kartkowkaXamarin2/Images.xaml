@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kartkowkaXamarin2.Images">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image
+            AbsoluteLayout.LayoutBounds="0,0,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Source="icon3"
+            >
+            </Image>
+            <Image
+            AbsoluteLayout.LayoutBounds=".5,.5,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Source="icon2"
+            >
+            </Image>
+            <Image
+            AbsoluteLayout.LayoutBounds="1,1,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Source="icon1"
+            >
+            </Image>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
