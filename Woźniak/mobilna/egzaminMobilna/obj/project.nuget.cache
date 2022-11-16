@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "tkO2NlrF+ICnSkYN1qO6s9//JjLxkpORZAiecbcrFPtgTKocpAFhHVKZUW5XD+nc6jcCcoNZT3hTBaFxaYlfrw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\mobilna\\egzaminMobilna\\egzaminMobilna.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wozniakd\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
