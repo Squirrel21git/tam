@@ -3414,11 +3414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake.Android\\Snake.Android.csproj",
+      "projectUniqueName": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake.Android\\Snake.Android.csproj",
       "projectName": "Snake.Android",
-      "projectPath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake.Android\\Snake.Android.csproj",
+      "projectPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake.Android\\Snake.Android.csproj",
       "packagesPath": "C:\\Users\\wozniakd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake.Android\\obj\\",
+      "outputPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3439,8 +3439,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake\\Snake.csproj": {
-              "projectPath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake\\Snake.csproj"
+            "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake\\Snake.csproj": {
+              "projectPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake\\Snake.csproj"
             }
           }
         }

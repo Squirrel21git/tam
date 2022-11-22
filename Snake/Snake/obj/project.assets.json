@@ -547,11 +547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake\\Snake.csproj",
+      "projectUniqueName": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake\\Snake.csproj",
       "projectName": "Snake",
-      "projectPath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake\\Snake.csproj",
+      "projectPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake\\Snake.csproj",
       "packagesPath": "C:\\Users\\wozniakd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake\\obj\\",
+      "outputPath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\Snake\\Snake\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
