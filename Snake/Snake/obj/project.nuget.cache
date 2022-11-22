@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+0j3IMw8ChoTKfHiuDwkfgQDuzjC5f+Uc0Znp7YJdssdvB6d5CCHOHeENYdr9slRHdP+YQV+/3jJEDjynZW72w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wozniakd\\Desktop\\Woźniak\\Snake\\Snake\\Snake.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wozniakd\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
