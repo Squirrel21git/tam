@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddTakeMoney.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddToList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,6 +21,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddTakeMoney.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AddToList.xaml">
       <SubType>Designer</SubType>
     </Page>

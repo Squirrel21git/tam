@@ -17,7 +17,7 @@ namespace BankWPF
         {
             return _accounts;
         }
-        private int generateId()
+        private int GenerateId()
         {
             int id = 1;
             if (_accounts.Any())
@@ -28,15 +28,15 @@ namespace BankWPF
         }
         public SavingAccount CreateSavingsAccount(string firstName, string lastName, long pesel)
         {
-            int id = generateId();
-            SavingAccount account = new SavingAccount(id, 0.0M, firstName, lastName, pesel);
+            int id = GenerateId();
+            SavingAccount account = new(id, 0.0M, firstName, lastName, pesel);
             _accounts.Add(account);
             return account;
         }
         public BillingAccount CreateBillingsAccount(string firstName, string lastName, long pesel)
         {
-            int id = generateId();
-            BillingAccount account = new BillingAccount(id, 0.0M, firstName, lastName, pesel);
+            int id = GenerateId();
+            BillingAccount account = new(id, 0.0M, firstName, lastName, pesel);
             _accounts.Add(account);
             return account;
         }

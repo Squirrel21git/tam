@@ -39,7 +39,7 @@ namespace BankWPF
         }
         public void AddInterest(decimal interest)
         {
-            Balance += Balance * interest;
+            Balance += Math.Round(Balance * interest, 2);
         }
         public void TakeCharge(decimal value)
         {
