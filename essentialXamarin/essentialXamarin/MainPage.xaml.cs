@@ -58,7 +58,7 @@ namespace essentialXamarin
 
         private void AddBtn_Clicked(object sender, EventArgs e)
         {
-            ContentResolver.Update();
+            //ContentResolver.Update();
             // https://learn.microsoft.com/pl-pl/xamarin/android/user-interface/user-profile
         }
     }

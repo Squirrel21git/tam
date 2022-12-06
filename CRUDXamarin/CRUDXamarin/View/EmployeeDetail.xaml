@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Add New Employee"
+             x:Class="CRUDXamarin.View.EmployeeDetail">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Entry Placeholder="Name"
+                   x:Name="nameEntry"
+                   TextTransform="Uppercase"/>
+            
+            <Entry Placeholder="Address"
+                   x:Name="addressEntry"/>
+            
+            <Button Text="Save"
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
