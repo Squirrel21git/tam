@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:kartkowkaRotateXamarin"
+             x:Class="kartkowkaRotateXamarin.MainPage">
+
+    <ContentPage Title="Rotate">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="0" WidthRequest="120" HeightRequest="120"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   FontSize="42"
+                   BackgroundColor="Red"
+                   x:Name="lblRotate"
+                   />
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Entry WidthRequest="120" x:Name="userInput"
+                       HorizontalTextAlignment="Center" 
+                       Keyboard="Numeric"
+                       />
+                <Button Text="ZATWIERŹ"
+                        Clicked="Rotate_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+    
+    <ContentPage Title="History">
+        <ListView x:Name="historyList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label
+                            VerticalTextAlignment="Center"
+                            FontSize="24"
+                            Text="{Binding .}"
+                            />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage>
+
+</TabbedPage>
