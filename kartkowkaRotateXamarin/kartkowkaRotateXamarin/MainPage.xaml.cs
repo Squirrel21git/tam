@@ -31,7 +31,7 @@ namespace kartkowkaRotateXamarin
 
             Rotation += temp;
             lblRotate.Text = Rotation.ToString();
-            lblRotate.Rotation = Rotation;
+            lblRotate.RotateTo(Rotation);
             RotationHistory.Add(temp);
         }
     }
