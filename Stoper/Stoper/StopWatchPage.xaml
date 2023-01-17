@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stoper.StopWatchPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="57*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" 
+               HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"
+               VerticalOptions="Center" VerticalTextAlignment="Center"
+               FontSize="64"
+               FontAttributes="Bold"
+               x:Name="lblStopWatch"
+               Text="{Binding .}"/>
+        <StackLayout  Grid.Row="1" HorizontalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Button Text="reset" Clicked="btnReset_Clicked" WidthRequest="150" />
+                <Button Text="międzyczas" Clicked="btnLap_Clicked" WidthRequest="150"/>
+            </StackLayout>
+            <Button Text="start" Clicked="btnStartStop_Clicked" x:Name="btnStartStop"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+            <ListView x:Name="listLapTimes">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding LapTime}" VerticalOptions="Center" FontSize="Large"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Zapisz" Clicked="btnSave_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
