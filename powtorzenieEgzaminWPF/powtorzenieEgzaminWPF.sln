@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "powtorzenieEgzaminWPF", "powtorzenieEgzaminWPF.csproj", "{A325160E-3F86-423F-A96A-9F18C09069D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A325160E-3F86-423F-A96A-9F18C09069D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A325160E-3F86-423F-A96A-9F18C09069D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A325160E-3F86-423F-A96A-9F18C09069D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A325160E-3F86-423F-A96A-9F18C09069D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BA97A55-9EA2-42CB-96B5-D51C2F6B5CA3}
+	EndGlobalSection
+EndGlobal

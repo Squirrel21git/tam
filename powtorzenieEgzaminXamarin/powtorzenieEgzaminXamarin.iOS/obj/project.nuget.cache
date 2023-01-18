@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hPik/ejKycF9flijh+5yMbCe7UOdiZ8/SP+hTSKbJK/UED5We+GGmnRSOI0js5UZ5Ep5+vnweJOx2gM+L5V3Dw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wozniakd\\Desktop\\Prace\\4b2_programy_\\powtorzenieEgzaminXamarin\\powtorzenieEgzaminXamarin.iOS\\powtorzenieEgzaminXamarin.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wozniakd\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\wozniakd\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

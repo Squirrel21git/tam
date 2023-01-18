@@ -1,0 +1,8 @@
+System operacyjny: Windows 10
+
+Środowisko programistyczne: Visual Studio 2022
+
+Języki programowania: C#
+
+Nazwa emulowanego urządzenia: Pixel 5 - API 32
+

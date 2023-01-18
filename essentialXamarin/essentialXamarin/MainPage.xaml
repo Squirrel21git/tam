@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="essentialXamarin.MainPage">
+
+    <ListView x:Name="ContactList" IsVisible="True" ItemSelected="ContactList_ItemSelected">
+        <ListView.Header>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Dodaj" Clicked="AddBtn_Clicked"/>
+                <Button Text="Usuń" />
+            </StackLayout>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding DisplayName}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

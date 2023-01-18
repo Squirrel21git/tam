@@ -1,0 +1,29 @@
+﻿<Window x:Class="BankWPF.AddAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankWPF"
+        mc:Ignorable="d"
+        Title="AddAccount" Height="450" Width="400">
+    <StackPanel>
+        <Label Content="Tworzenie konta" Style="{StaticResource labelTitle}"/>
+        <WrapPanel>
+            <Label Content="Imie klienta: "/>
+            <TextBox Width="150" x:Name="nameToAdd"/>
+        </WrapPanel>
+        <WrapPanel>
+            <Label Content="Nazwisko klienta: "/>
+            <TextBox Width="150" x:Name="surnameToAdd"/>
+        </WrapPanel>
+        <WrapPanel>
+            <Label Content="PESEL klienta: "/>
+            <TextBox Width="150" x:Name="peselToAdd"/>
+        </WrapPanel>
+        <ComboBox x:Name="accountType">
+            <ComboBoxItem IsSelected="True">Rozliczeniowe</ComboBoxItem>
+            <ComboBoxItem>Oszczędnościowe</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Stwórz konto" Click="Button_Click"/>
+    </StackPanel>
+</Window>

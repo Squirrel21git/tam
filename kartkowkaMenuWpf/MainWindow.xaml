@@ -1,0 +1,29 @@
+﻿<Window x:Class="kartkowkaMenuWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kartkowkaMenuWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Window.CommandBindings>
+        <CommandBinding Command="local:Commands.Dodaj" 
+                        CanExecute="Always_CanExecute" 
+                        Executed="Dodaj_Executed"
+                        />
+        <CommandBinding Command="local:Commands.Zapisz" 
+                        CanExecute="Always_CanExecute" 
+                        Executed="Zapisz_Executed" 
+                        />
+    </Window.CommandBindings>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Menu">
+                <MenuItem Header="_Dodaj" Command="local:Commands.Dodaj"/>
+                <MenuItem Header="_Zapisz" Command="local:Commands.Zapisz"/>
+            </MenuItem>
+        </Menu>
+        <DataGrid x:Name="data" IsReadOnly="True">
+        </DataGrid>
+    </DockPanel>
+</Window>

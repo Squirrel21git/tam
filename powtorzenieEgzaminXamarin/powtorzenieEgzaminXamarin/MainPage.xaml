@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="powtorzenieEgzaminXamarin.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Rectangle VerticalOptions="Start" BackgroundColor="Red" HeightRequest="100">
+            <Rectangle.GestureRecognizers>
+                <DragGestureRecognizer DragStarting="DragGestureRecognizer_DragStarting" CanDrag="True"/>
+            </Rectangle.GestureRecognizers>
+        </Rectangle>
+        <Rectangle VerticalOptions="Start" BackgroundColor="Yellow" HeightRequest="100">
+            <Rectangle.GestureRecognizers>
+                <DragGestureRecognizer DragStarting="DragGestureRecognizer_DragStarting" CanDrag="True"/>
+            </Rectangle.GestureRecognizers>
+        </Rectangle>
+        <Frame VerticalOptions="EndAndExpand" BackgroundColor="Green" HeightRequest="100">
+            <Frame.GestureRecognizers>
+                <DropGestureRecognizer Drop="DropGestureRecognizer_Drop" AllowDrop="True"/>
+            </Frame.GestureRecognizers>
+            <Label x:Name="label"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>

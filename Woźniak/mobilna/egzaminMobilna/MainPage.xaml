@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="egzaminMobilna.MainPage">
+
+    <StackLayout>
+        <Label Text="Rejestruj konto" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="Teal" FontSize="Title"/>
+        <Label Text="Podaj e-mail:" HorizontalOptions="StartAndExpand"/>
+        <Entry Placeholder="email" HorizontalOptions="FillAndExpand" x:Name="email"/>
+        <Label Text="Podaj hasło:" HorizontalOptions="StartAndExpand"/>
+        <Entry IsPassword="True" HorizontalOptions="FillAndExpand" x:Name="password1"/>
+        <Label Text="Powtórz hasło:" HorizontalOptions="StartAndExpand"/>
+        <Entry IsPassword="True" HorizontalOptions="FillAndExpand" x:Name="password2"/>
+
+        <Button Text="ZATWIERDŹ" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+        <Label Text="Autor: Dawid Woźniak" HorizontalOptions="CenterAndExpand" x:Name="result"/>
+    </StackLayout>
+
+</ContentPage>

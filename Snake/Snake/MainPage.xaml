@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Snake.MainPage"
+             xmlns:local="clr-namespace:Snake"
+             >
+    <ContentPage.Resources>
+        <Style TargetType="{x:Type local:Snake}">
+            <Setter Property="Background" Value="Green"/>
+        </Style>
+        <Style TargetType="{x:Type local:Apple}">
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="0.04*, *">
+        <Label x:Name="result" Grid.Row="0" Text="Points: 0" FontSize="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+        <AbsoluteLayout x:Name="layout" Grid.Row="1">
+            <AbsoluteLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Up" Swiped="Up_Swiped"/>
+                <SwipeGestureRecognizer Direction="Down" Swiped="Down_Swiped"/>
+                <SwipeGestureRecognizer Direction="Left" Swiped="Left_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="Right_Swiped"/>
+            </AbsoluteLayout.GestureRecognizers>
+        </AbsoluteLayout>
+    </Grid>
+
+</ContentPage>

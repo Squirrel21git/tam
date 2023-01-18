@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="essentialXamarin.ContactInfo">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label x:Name="lblName" 
+                   Text="{Binding DisplayName}" 
+                   FontSize="Large" 
+                   HorizontalTextAlignment="Center" 
+                   FontAttributes="Bold"
+                   />
+            <Label x:Name="lblPhone" 
+                   Text="{Binding Phones[0]}" 
+                   FontSize="Large" 
+                   HorizontalTextAlignment="Center" 
+                   FontAttributes="Bold"
+                   />
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Edytuj" 
+                        Clicked="EditBtn_Clicked"
+                        />
+                <Button Text="Usuń" 
+                        Clicked="DeleteBtn_Clicked"
+                        />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
