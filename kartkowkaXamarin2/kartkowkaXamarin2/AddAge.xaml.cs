@@ -26,7 +26,7 @@ namespace kartkowkaXamarin2
 
         private void ShowAgeButton_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Wiek: " , Data.List[Data.List.Count - 1].Age.ToString(), "Zamknij");
+            if (Data.List.Count > 0) DisplayAlert("Wiek: ", Data.List[Data.List.Count - 1].Age.ToString(), "Zamknij");
         }
     }
 }
